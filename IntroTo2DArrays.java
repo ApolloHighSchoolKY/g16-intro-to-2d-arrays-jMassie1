@@ -73,18 +73,21 @@ public class IntroTo2DArrays{
 
       System.out.println("The sum of row" + row + " is: " + sum);
     }
+
+
     System.out.println("\n\n\nHomework Assignment");
 
     //Add up the columns of each row using for each loops...
     //Add up all of the values of the array using for each loops...
-    int[] count = new int[0];
-    for(int[] i: ray)
+
+    int count = 0;
+    for(int[] row: ray)
     {
-      for(int[] i2: ray)
-      count = i + i2;
+      for(int col: row)
+      count += col;
     }
 
-    System.out.println(Arrays.toString(count));
+    System.out.println("The total sum of both rows is: " + count);
   }
 
   
